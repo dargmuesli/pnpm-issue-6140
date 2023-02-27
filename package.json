@@ -1,13 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "nuxt": "^3.2.2"
+    "postinstall": "echo \"TMPDIR: $TMPDIR\"; echo \"const os = require('os'); console.log('tmpdir(): ' + os.tmpdir())\" | node -"
   }
 }
