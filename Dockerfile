@@ -6,4 +6,5 @@ COPY ./package.json ./
 
 RUN corepack enable \
     && pnpm install \
+    && pnpm -v \
     && echo "TMPDIR: $TMPDIR"; echo "const os = require('os'); console.log('tmpdir(): ' + os.tmpdir())" | node -
